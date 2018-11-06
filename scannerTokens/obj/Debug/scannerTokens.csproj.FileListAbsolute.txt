@@ -16,3 +16,12 @@ F:\fourth computer\scanner\scannerTokens\obj\Debug\scannerTokens.csprojResolveAs
 F:\fourth computer\scanner\scannerTokens\obj\Debug\scannerTokens.tokens.resources
 F:\fourth computer\scanner\scannerTokens\obj\Debug\scannerTokens.Properties.Resources.resources
 F:\fourth computer\scanner\scannerTokens\obj\Debug\scannerTokens.csproj.GenerateResource.Cache
+C:\Users\Yomna Jehad\Downloads\scanner-master\scannerTokens\bin\Debug\scannerTokens.exe.config
+C:\Users\Yomna Jehad\Downloads\scanner-master\scannerTokens\obj\Debug\scannerTokens.exe
+C:\Users\Yomna Jehad\Downloads\scanner-master\scannerTokens\obj\Debug\scannerTokens.pdb
+C:\Users\Yomna Jehad\Downloads\scanner-master\scannerTokens\obj\Debug\scannerTokens.csprojResolveAssemblyReference.cache
+C:\Users\Yomna Jehad\Downloads\scanner-master\scannerTokens\obj\Debug\scannerTokens.tokens.resources
+C:\Users\Yomna Jehad\Downloads\scanner-master\scannerTokens\obj\Debug\scannerTokens.Properties.Resources.resources
+C:\Users\Yomna Jehad\Downloads\scanner-master\scannerTokens\obj\Debug\scannerTokens.csproj.GenerateResource.Cache
+C:\Users\Yomna Jehad\Downloads\scanner-master\scannerTokens\bin\Debug\scannerTokens.exe
+C:\Users\Yomna Jehad\Downloads\scanner-master\scannerTokens\bin\Debug\scannerTokens.pdb

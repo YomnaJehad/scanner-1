@@ -1,0 +1,6 @@
+Read x;
+If x < 0 Then 
+
+fact :=1;
+Repeat
+fact := fact*x;

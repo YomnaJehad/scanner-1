@@ -33,15 +33,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TokensButton = new System.Windows.Forms.Button();
             this.ScannerGridView = new System.Windows.Forms.DataGridView();
-            this.restart = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.restart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ScannerGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // FileDataBox
             // 
-            this.FileDataBox.Location = new System.Drawing.Point(30, 99);
+            this.FileDataBox.Location = new System.Drawing.Point(13, 76);
             this.FileDataBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.FileDataBox.Multiline = true;
             this.FileDataBox.Name = "FileDataBox";
@@ -50,10 +50,10 @@
             // 
             // loadFileButton
             // 
-            this.loadFileButton.Location = new System.Drawing.Point(130, 47);
+            this.loadFileButton.Location = new System.Drawing.Point(107, 51);
             this.loadFileButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.loadFileButton.Name = "loadFileButton";
-            this.loadFileButton.Size = new System.Drawing.Size(117, 46);
+            this.loadFileButton.Size = new System.Drawing.Size(126, 22);
             this.loadFileButton.TabIndex = 5;
             this.loadFileButton.Text = "Load Code File";
             this.loadFileButton.UseVisualStyleBackColor = true;
@@ -62,20 +62,24 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(34, 31);
+            this.label1.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(22, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(318, 13);
+            this.label1.Size = new System.Drawing.Size(306, 39);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Please write here your code or you can upload the file.";
+            this.label1.Text = "Please write your code, \r\nor upload the code file.\r\n- Reserved words start with a" +
+    " Capital Letter.\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // TokensButton
             // 
-            this.TokensButton.Location = new System.Drawing.Point(159, 360);
+            this.TokensButton.Location = new System.Drawing.Point(117, 337);
             this.TokensButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TokensButton.Name = "TokensButton";
-            this.TokensButton.Size = new System.Drawing.Size(88, 34);
+            this.TokensButton.Size = new System.Drawing.Size(107, 23);
             this.TokensButton.TabIndex = 7;
             this.TokensButton.Text = "See Tokens";
             this.TokensButton.UseVisualStyleBackColor = true;
@@ -87,24 +91,14 @@
             this.ScannerGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.ScannerGridView.Location = new System.Drawing.Point(373, 31);
+            this.ScannerGridView.Location = new System.Drawing.Point(343, 15);
             this.ScannerGridView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ScannerGridView.Name = "ScannerGridView";
             this.ScannerGridView.RowHeadersWidth = 30;
-            this.ScannerGridView.Size = new System.Drawing.Size(435, 325);
+            this.ScannerGridView.Size = new System.Drawing.Size(457, 345);
             this.ScannerGridView.TabIndex = 8;
+            this.ScannerGridView.Visible = false;
             this.ScannerGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ScannerGridView_CellContentClick);
-            // 
-            // restart
-            // 
-            this.restart.Location = new System.Drawing.Point(37, 360);
-            this.restart.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.restart.Name = "restart";
-            this.restart.Size = new System.Drawing.Size(91, 34);
-            this.restart.TabIndex = 9;
-            this.restart.Text = "Restart";
-            this.restart.UseVisualStyleBackColor = true;
-            this.restart.Click += new System.EventHandler(this.restart_Click);
             // 
             // Column1
             // 
@@ -120,12 +114,23 @@
             this.Column2.ReadOnly = true;
             this.Column2.Width = 200;
             // 
+            // restart
+            // 
+            this.restart.Location = new System.Drawing.Point(25, 337);
+            this.restart.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.restart.Name = "restart";
+            this.restart.Size = new System.Drawing.Size(70, 23);
+            this.restart.TabIndex = 9;
+            this.restart.Text = "Restart";
+            this.restart.UseVisualStyleBackColor = true;
+            this.restart.Click += new System.EventHandler(this.restart_Click);
+            // 
             // tokens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(842, 412);
+            this.BackColor = System.Drawing.Color.Brown;
+            this.ClientSize = new System.Drawing.Size(812, 372);
             this.Controls.Add(this.restart);
             this.Controls.Add(this.ScannerGridView);
             this.Controls.Add(this.TokensButton);

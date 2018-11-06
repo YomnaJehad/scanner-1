@@ -60,6 +60,7 @@ namespace scannerTokens
 
         private void TokensButton_Click(object sender, EventArgs e)
         {
+            ScannerGridView.Visible = true;
             string[] FileData = FileDataBox.Text.Split(new string[] { "\r\n" }, StringSplitOptions.None);
             CompilerScanner newScanner = new CompilerScanner();
             List<KeyValuePair<string, string>> ScannerData = new List<KeyValuePair<string, string>>();
@@ -81,6 +82,11 @@ namespace scannerTokens
         {
             FileDataBox.Clear();
             ScannerGridView.Rows.Clear();            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
        
     }
